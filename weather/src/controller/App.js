@@ -86,12 +86,12 @@ this.secondSource = this.secondSource.bind(this)
    
     
   return (
-    <div>
+    <div className='box'>
       <h1>WEATHER APP</h1>
 <div><Search changeValue = {this.seachCity}/></div>
 <div><Button content='First source' handleClick={this.firstSource}/></div>
 <div><Button content='Second source' handleClick={this.secondSource}/></div>
-<p class ='city'>Your city: <span id='user-city'></span> </p>
+<p className ='city'>Your city: <span id='user-city'></span> </p>
 < WeatherForecast city = {this.state.weatherCity} temperature = {this.state.temperature} wind ={this.state.wind} rain = {this.state.rain} clouds= {this.state.clouds} humidity = {this.state.humidity}/>
     </div>
   );
